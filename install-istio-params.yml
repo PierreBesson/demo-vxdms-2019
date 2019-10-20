@@ -1,0 +1,23 @@
+pilot:
+  traceSampling: 100.0
+
+mixer:
+  telemetry:
+    enabled: true
+  adapters:
+    stdio:
+      enabled: true
+ 
+grafana:
+  enabled: true
+
+tracing:
+  enabled: true
+  provider: zipkin
+
+kiali:
+  enabled: true
+  createDemoSecret: true
+  dashboard:
+    grafanaURL: http://grafana:3000
+
