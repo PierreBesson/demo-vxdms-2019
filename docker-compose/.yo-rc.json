@@ -1,0 +1,18 @@
+{
+  "generator-jhipster": {
+    "deploymentType": "docker-compose",
+    "gatewayType": "zuul",
+    "monitoring": "no",
+    "directoryPath": "../",
+    "appsFolders": [
+      "store",
+      "accountancy"
+    ],
+    "clusteredDbApps": [],
+    "consoleOptions": [],
+    "serviceDiscoveryType": "eureka",
+    "dockerRepositoryName": "pbesson",
+    "dockerPushCommand": "docker push",
+    "jwtSecretKey": "NDE5MTIzY2VkNDFhZGFkZjYwZTA2ZjdjMTNkNzNhYjA4NDE5NTIxMzg2ZjBiNTMwY2ZiZGRmNDA5MGMzNWU4MjBjODg4OGM3NTNlNWUyOWRjZGRlM2NiN2U3MGY3MmFkNTIyNA=="
+  }
+}

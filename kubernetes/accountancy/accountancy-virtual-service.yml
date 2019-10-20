@@ -1,0 +1,17 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: accountancy-virtualservice
+  namespace: jhipster
+spec:
+  hosts:
+    - accountancy
+  http:
+    - route:
+        - destination:
+            host: accountancy
+            subset: 'v1'
+          weight: 100
+      retries:
+        attempts: 3
+        perTryTimeout: 2s
